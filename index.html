@@ -12,7 +12,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         .urlInput {
             display: block;
             width: 100%;
@@ -21,7 +20,6 @@
             margin-top: 8px;
             margin-bottom: 8px;
         }
-
         .centeredVideo {
             display: block;
             width: 100%;
@@ -30,7 +28,6 @@
             margin-right: auto;
             margin-bottom: auto;
         }
-
         .controls {
             display: block;
             width: 100%;
@@ -40,7 +37,6 @@
             margin-top: 8px;
             margin-bottom: 10px;
         }
-
         .logcatBox {
             border-color: #CCCCCC;
             font-size: 11px;
@@ -57,7 +53,13 @@
 <div class="header"><h1>资源点</h1>
 <p class="description">全站资源来自网络，包括源码！ </p>
 <p class="description">侵删！ </p>
+<p class="description">必读 </p>
+<p class="description">新增指令 </p>
+<p class="description">/tr:打开跨服面板 </p>
+<p class="description">输入/tr后选择跨服进入老图</p>
+<p class="description">新图仅供测试使用 </p>
 </div>
+<div class="sites">
 <dl>
 <dt>游戏下载</dt>
 <dd><a href="http://hub3.oss-cn-zhangjiakou.aliyuncs.com/MCPE1.12.0%E6%AD%A3%E5%BC%8F%E7%89%88.apk" referrer="unsafe-url">1.12.0</a></dd>
@@ -71,7 +73,7 @@
 <dl class="alt"><dt>游戏下载</dt>
 <dd><a href="http://9dz.oss-cn-beijing.aliyuncs.com/MCPE1.14.3.apk" target="_blank">1.14.30</a></dd>
 <dd><a href="https://9dz.oss-cn-beijing.aliyuncs.com/MCPE1.14.60.apk" target="_blank">1.14.60</a></dd>
-<dd><a href="https://9dz.oss-cn-beijing.aliyuncs.com/MCPE1.16.0.2.apk" target="_blank">1.16.0</a></dd>
+<dd><a href="" target="_blank"></a></dd>
 <dd><a href="" target="_blank"></a></dd>
 <dd><a href="" target="_blank"></a></dd>
 <dd><a href="" target="_blank"></a></dd>
@@ -96,6 +98,7 @@
 <dd>513</dd>
 </dl>
 <dl class="alt"><dt>白名单列表</dt>
+<dd>马智</dd>
 <dd>马智*</dd>
 <dd>豆子</dd>
 <dd>豆子</dd>
@@ -110,6 +113,7 @@
 <dd>DZDMavi</dd>
 <dd>Douzidoumi</dd>
 <dd>aimiao</dd>
+
 <dd>Pincakem</dd>
 <dd>RACyyB</dd>
 </dl>
@@ -136,6 +140,7 @@
 <dd>浅瞳</dd>
 <dd>情病</dd>
 <dd>莫言</dd>
+<dd>马智</dd>
 <dd>马智*</dd>
 <dd>伯爵</dd>
 <dd>神安</dd>
@@ -150,12 +155,17 @@
 <dd>Shenan1314</dd>
 </dl>
 <dl class="alt"><dt>白名单列表</dt>
+<dd>手残</dd>
+<dd>小六</dd>
+<dd>男爵</dd>
 <dd>手残*</dd>
 <dd>小六*</dd>
 <dd><font size="3" color="red">男爵*</font></dd>
 <dd>酥饼</dd>
+<dd>手残</dd>
 <dd>手残*</dd>
 <dd>小十</dd>
+<dd>夏末</dd>
 <dd>夏末*</dd>
 </dl>
 <dl class="alt"><dt>id</dt>
@@ -185,22 +195,19 @@
 <dd></dd>
 <dd></dd>
 </dl>
-<div><font size="3" color="blue">注:"*"非茶家房管</font><font size="3" color="red">红名</font><font size="3" color="blue">为封禁人员</font></div>
+<dl class="alt"><dt>注:"*"非茶家房管 <font size="3" color="red">红名</font>为封禁人员</dt>
 </div>
 <div class="mainContainer">
         <video name="videoElement" class="centeredVideo" id="videoElement" controls width="1024" height="576" autoplay>
             Your browser is too old which doesn't support HTML5 video.
         </video>
-
     </div>
-
     <script src="http://dzinf.oss-cn-beijing.aliyuncs.com/flv.js?v=2"></script>
     
     <script>
          if (flvjs.isSupported()) {
             startVideo()
         }
-
         function startVideo(){
             var videoElement = document.getElementById('videoElement');
             var flvPlayer = flvjs.createPlayer({
@@ -215,11 +222,9 @@
             flvPlayer.load();
             flvPlayer.play();
         }
-
         videoElement.addEventListener('click', function(){
             alert( '是否支持点播视频：' + flvjs.getFeatureList().mseFlvPlayback + ' 是否支持httpflv直播流：' + flvjs.getFeatureList().mseLiveFlvPlayback )
         })
-
         function destoryVideo(){
             flvPlayer.pause();
             flvPlayer.unload();
@@ -227,7 +232,6 @@
             flvPlayer.destroy();
             flvPlayer = null;
         }
-
         function reloadVideo(){
             destoryVideo()
             startVideo()
@@ -235,5 +239,5 @@
     </script></div>
 <script type="text/javascript" src="//js.users.51.la/20655347.js"></script>
 </body>
-
+<title="HelloWorld!">
 </html>
